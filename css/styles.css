@@ -3,7 +3,7 @@
 /* VARIABLES */
 
 :root {
-    --header-height: 3.5rem;
+    --header-height: 4rem;
     --background-dark: #2c1d3c;
     --background-light: #593b78;
     --orange: #fb520c;
@@ -224,30 +224,8 @@ ul li a {
 
 /* MAIN START */
 
-.inscripcion-btn {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--black);
-}
-
-.inscripcion-btn button {
-    color: var(--white);
-    background-color: var(--orange);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.inscripcion-btn button:hover {
-    color: var(--black);
-    border-color: var(--white);
-    background-color: var(--orange);
-}
-
-.text {
-    padding-top: 15px;
-    text-align: center;
+#main {
+    height: auto;
 }
 
 
