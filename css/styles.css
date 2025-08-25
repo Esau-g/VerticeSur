@@ -62,7 +62,7 @@ ul li a {
 /* HEADER */
 
 .header {
-   position: fixed;
+   position: sticky;
    height: 60px;
    top: 0;
    left: 0;
@@ -228,6 +228,9 @@ ul li a {
     height: auto;
 }
 
+/* Section 1 */
+
+
 
 /* BREAKPOINTS */
 
@@ -255,6 +258,11 @@ ul li a {
         display: flex;
         justify-content: space-between;
         padding-right: 3rem;
+    }
+
+    .nav_container {
+        display: flex;
+        justify-content: space-between;
     }
 
     .nav_toggle {
