@@ -222,14 +222,42 @@ ul li a {
     transform: rotate(180deg);
 }
 
+/* CARRERA */
+
+.section_container {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    height: 10rem;
+}
+
+.section_text {
+    
+    text-align: center;
+}
+
 /* MAIN START */
 
 #main {
+    display: flex;
     height: auto;
 }
 
 /* Section 1 */
 
+.text {
+    text-align: center;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container .card img {
+    width: 100%;  
+}
 
 
 /* BREAKPOINTS */
@@ -297,8 +325,6 @@ ul li a {
         max-height: initial;
         overflow: initial;
         position: absolute;
-        left: 0;
-        top: 6rem;
         opacity: 0;
         pointer-events: none;
         transition: opacity .3s, top .3s;
@@ -310,7 +336,7 @@ ul li a {
 
     .dropdown_item:hover .dropdown_menu {
         opacity: 1;
-        top: 5.5rem;
+        /* top: 5.5rem; */
         pointer-events: initial;
         transition: top .3s;
     }
