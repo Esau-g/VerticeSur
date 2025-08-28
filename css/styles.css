@@ -223,19 +223,26 @@ ul li a {
     transform: rotate(180deg);
 }
 
-
-
 /* CARRERA */
 
 .section_container {
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--orange);
-    height: 10rem;
+    height: 15rem;
 }
 
 .section_text {
     text-align: center;
+}
+
+.hero {
+    width: 100%;
+}
+
+.back-anim {
+    width: 100%;
 }
 
 /* MAIN START */
@@ -245,21 +252,41 @@ ul li a {
     height: auto;
 }
 
-/* Section 1 */
-
-
 .text {
     text-align: center;
 }
 
-.card_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card_container .card img {
     width: 100%;  
+}
+
+
+/* MAIN FINISH */
+
+/* SECTION 2 */
+
+.itinerario {
+    height: 25rem;
+}
+
+.card-itinerario {
+    
+}
+
+/* SECTION FAQ */
+
+.faq {
+    
+}
+
+/* FOOTER */
+
+.footer {
+    
+}
+
+.footer .redes-container {
+ 
 }
 
 
