@@ -13,7 +13,7 @@
     --body-font: "Play", sans-serif;
     --body-color: #e3e3e3;
     --font-regular: 400;
-    --font-semi-bold: 600; 
+    --font-semi-bold: 600;
     --ztooltip: 10;
     --z-fixed: 100;
 }
@@ -62,14 +62,14 @@ ul li a {
 /* HEADER */
 
 .header {
-   position: sticky;
-   height: 60px;
-   top: 0;
-   left: 0;
-   width: 100%;
-   background-color: var(--background-dark);
-   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3); 
-   z-index: var(--z-fixed);
+    position: sticky;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-dark);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: var(--z-fixed);
 }
 
 /* NAV */
@@ -128,7 +128,7 @@ ul li a {
 }
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1118px){
+@media screen and (max-width: 1118px) {
     .nav_menu {
         position: absolute;
         left: 0;
@@ -140,9 +140,11 @@ ul li a {
         opacity: 0;
         transition: top .4s, opacity .3s;
     }
-    .nav_menu::-webkit-scrollbar{
+
+    .nav_menu::-webkit-scrollbar {
         width: 0;
     }
+
     .nav_list {
         background-color: var(--dark-color);
         padding-top: 1rem;
@@ -187,9 +189,9 @@ ul li a {
 }
 
 .dropdown_arrow {
-     font-size: 1.25rem;
-     font-weight: initial;
-     transition: transform .4s;
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
 }
 
 .dropdown_link {
@@ -216,7 +218,7 @@ ul li a {
 
 .dropdown_item:hover .dropdown_menu {
     max-height: 1000px;
-    transition: max-height .4s ease-in; 
+    transition: max-height .4s ease-in;
 }
 
 .dropdown_item:hover .dropdown_arrow {
@@ -257,7 +259,7 @@ ul li a {
 }
 
 .card_container .card img {
-    width: 100%;  
+    width: 100%;
 }
 
 
@@ -266,34 +268,104 @@ ul li a {
 /* SECTION 2 */
 
 .itinerario {
+    background-color: var(--background-dark);
     height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card-itinerario {
-    
+    padding-top: 2rem;
+}
+
+.card-itinerario .card-img i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+}
+
+.card-itinerario h3 {
+    text-align: center;
+}
+
+.itinerario h2 {
+    color: var(--orange);
+}
+
+.itinerario .card-itinerario h3 {
+    color: var(--orange);
 }
 
 /* SECTION FAQ */
 
 .faq {
-    
+    background-color: var(--background-dark);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq h2 {
+    color: var(--orange);
+    padding-bottom: 2rem;
+}
+
+.questions ul {
+    padding: 5px;
+}
+
+.questions ul li {
+    background-color: var(--body-color);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1rem;
+}
+
+.questions ul li a {
+    padding: .5rem;
 }
 
 /* FOOTER */
 
 .footer {
-    
+    background-color: var(--background-dark);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.footer .redes-container {
- 
+.logo-footer img {
+    width: 300px;
+}
+
+.redes-container .redes a i {
+    color: var(--orange);
+    font-size: 24px;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
 }
 
 
 /* BREAKPOINTS */
 
 /* Small Devices */
- @media screen and (max-width: 340px) {
+@media screen and (max-width: 340px) {
     .container {
         margin-inline: 1rem;
     }
@@ -301,16 +373,16 @@ ul li a {
     .nav_link {
         padding-inline: 1rem;
     }
- }
+}
 
- /* Large Devices */
+/* Large Devices */
 
- @media screen and (min-width: 1118px) {
+@media screen and (min-width: 1118px) {
     .container {
         margin-inline: auto;
     }
 
-  
+
     .nav {
         height: calc(var(--header-height) + 2rem);
         display: flex;
@@ -330,8 +402,8 @@ ul li a {
     .nav_list {
         height: 100%;
         display: flex;
-         justify-content: flex-end;
-         align-items: center;
+        justify-content: flex-end;
+        align-items: center;
         padding-right: 3rem;
         column-gap: 3rem;
     }
@@ -344,7 +416,7 @@ ul li a {
     }
 
     .nav_link:hover {
-      border-bottom: 2px solid #fb520c;  
+        border-bottom: 2px solid #fb520c;
     }
 
     .dropdown_item {
@@ -374,4 +446,4 @@ ul li a {
         pointer-events: initial;
         transition: top .3s;
     }
- }
+}
