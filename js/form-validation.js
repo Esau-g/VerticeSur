@@ -84,3 +84,46 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.registration-form')
+
+    if (form) {
+        form.addEventListener('submit', handleFormSubmission);
+    }
+});
+
+function handleFormSubmission(event) {
+    event.preventDefault();
+
+    const formData = new FormData (event.target);
+
+    const submitButton = event.target.querySelector('.submit-button');
+    const originalText = submitButton.textContent;
+    submitButton.textContent = 'Enviando...';
+    submitButton.disabled = true;
+
+
+    fetch ('/submit-registration', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert ('¡Inscripción enviada exitosamente! Te contactaremos pronto.');
+        } else {
+            alert ('Error: ' + data.message);
+        }
+    })
+
+    .catch (error => {
+        console.error('Error:', error);
+        alert ('Error al enviar el formulario. Por favor intenta de nuevo.');
+    })
+
+    .finally(() => {
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    })
+}
