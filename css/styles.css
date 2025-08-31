@@ -478,10 +478,14 @@ ul li a {
     text-align: center;
     width: 100%;
     max-width: 800px;
-    background-color: var(--orange);
+    background-color: var(--background-light);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 4px 3px 25px rgb(153, 153, 153);
+}
+
+.inscription-container h1, p {
+    color: var(--white);
 }
 
 .inscription-title {
@@ -504,7 +508,7 @@ ul li a {
 
 .form-section h3 {
     margin-bottom: 1rem;
-    color: var(--background-dark);
+    color: var(--white);
 }
 
 .form-field {
@@ -515,7 +519,7 @@ ul li a {
     display: block;
     margin-bottom: 0.25rem;
     font-weight: var(--font-semi-bold);
-    color: var(--background-dark);
+    color: var(--white);
 }
 
 .form-input,
@@ -534,8 +538,8 @@ ul li a {
 .form-select:focus,
 .form-textarea:focus {
     outline: none;
-    border-color: rgb(138, 60, 255);
-    box-shadow: 0 0 5px 4px rgba(255, 182, 46, 0.254);
+    border-color: #ffaa00;
+    box-shadow: 0 0 5px 4px rgba(255, 123, 0, 0.254);
 }
 
 .form-textarea {
@@ -554,6 +558,7 @@ ul li a {
 .checkbox-group label {
     display: inline;
     font-weight: var(--font-regular);
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -575,9 +580,25 @@ ul li a {
 }
 
 .submit-button:hover {
-    background-color: var(--background-light);
+    background-color: var(--orange);
 }
 
 .submit-button:active {
     transform: translateY(1px);
+}
+
+/* ERROR STATES */
+
+.form-input.error,
+.form-select.error,
+.form-textarea.error {
+    border-color: #ff132b;
+    background-color: #fff5f5;
+}
+
+.error-message {
+    color: #ff132b;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
 }
