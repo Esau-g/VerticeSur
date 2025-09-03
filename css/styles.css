@@ -251,20 +251,31 @@ ul li a {
 
 #main {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
 }
 
 .text {
     text-align: center;
+    max-width: 100%;
+}
+
+.main .section_container_main .section_container {
+    height: 30rem;
+}
+
+.section_container .text p, h2 {
+    margin: 10px;
 }
 
 .section_container .text p {
     line-height: 2;
-    width: 1200px;
+    padding-top: 10px;
 }
 
 .card_container .card img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -462,6 +473,10 @@ ul li a {
         pointer-events: initial;
         transition: top .3s;
     }
+
+    .main .section_container_main .section_container {
+    height: 18rem;
+}
 }
 
 /* REGISTRATION FORM STYLES */

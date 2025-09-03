@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $formData = $_POST;
     
     // Send email to organizer
-    $to = 'race-organizer@email.com';
+    $to = 'santigonrafti@gmail.com';
     $subject = 'Nueva Inscripción - Vértice Sur 70K';
     
     $message = "
