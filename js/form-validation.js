@@ -104,7 +104,7 @@ function handleFormSubmission(event) {
     submitButton.disabled = true;
 
 
-    fetch ('/submit-registration', {
+    fetch ('../pages/submit-registration.php', {
         method: 'POST',
         body: formData
     })
@@ -118,7 +118,9 @@ function handleFormSubmission(event) {
     })
 
     .catch (error => {
-        console.error('Error:', error);
+        console.error('Full error details:', error);
+        console.error('Error message:', error.message);
+        console.error('Error stack:', error.stack);
         alert ('Error al enviar el formulario. Por favor intenta de nuevo.');
     })
 
