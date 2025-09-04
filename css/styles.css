@@ -259,10 +259,11 @@ ul li a {
 .text {
     text-align: center;
     max-width: 100%;
+    
 }
 
 .main .section_container_main .section_container {
-    height: 30rem;
+    height: 40rem;
 }
 
 .section_container .text p, h2 {
@@ -400,7 +401,15 @@ ul li a {
     .nav_link {
         padding-inline: 1rem;
     }
+
+    .main .section_container_main .section_container {
+    height: 45rem;
 }
+}
+
+/* Medium Devices */
+
+
 
 /* Large Devices */
 
