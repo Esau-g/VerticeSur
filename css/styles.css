@@ -251,6 +251,26 @@ ul li a {
     height: 100%;
 }
 
+/* SECTION CARRERA */
+
+.section_container .section_text .section_description {
+    font-size: 1.5rem;
+}
+
+.section_container .section_text .section_header {
+    font-size: 2.5rem;
+    color: var(--background-dark);
+}
+
+.section_container .section_text h2 {
+    color: var(--background-dark);
+}
+
+
+
+
+/* SECTION CARRERA FINISH */
+
 /* MAIN START */
 
 #main {
@@ -282,7 +302,6 @@ ul li a {
 .card_container .card img {
     max-width: 100%;
 }
-
 
 /* MAIN FINISH */
 
@@ -323,9 +342,10 @@ ul li a {
 
 /* SECTION FAQ */
 
-.faq {
+.faq-section {
     background-color: var(--background-dark);
     height: 25rem;
+    padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,25 +353,68 @@ ul li a {
     text-align: center;
 }
 
-.faq h2 {
-    color: var(--orange);
-    padding-bottom: 2rem;
+.faq {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.questions ul {
-    padding: 5px;
-}
-
-.questions ul li {
-    background-color: var(--body-color);
+.faq li {
+    background-color: var(--background-light);
     border-radius: 10px;
     padding: 5px;
-    margin: 1rem;
+    margin: 10px;
 }
 
-.questions ul li a {
-    padding: .5rem;
+.q {
+    padding: 0.5rem 0;
+    border-left: 10px solid var(--background-light);
+    cursor: pointer;
 }
+
+.arrow {
+    display: inline-block;
+    margin: 0 0.2rem;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid var(--background-dark);
+    border-bottom: 6px solid transparent;
+    transition: 0.4s;
+}
+
+.faq p {
+    line-height: 25px;
+}
+
+.a {
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em;
+}
+
+.a-opened {
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+}
+
+.arrow-rotated {
+    transform: rotate(90deg);
+}
+
+.faq-section h2 {
+    color: var(--orange);
+}
+
+.faq-section .faq .q span {
+    color: var(--body-color);
+}
+
+.faq-section .faq .a p {
+    color: var(--body-color);
+}
+
+
 
 /* FOOTER */
 
@@ -359,14 +422,17 @@ ul li a {
     background-color: var(--background-dark);
     height: 25rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
 
 .logo-footer img {
     width: 300px;
+}
+
+.redes {
+    margin-top: 2rem;
 }
 
 .redes-container .redes a i {
@@ -376,6 +442,7 @@ ul li a {
 
 .redes-container {
     width: 100%;
+    margin-top: 1.5rem;
 }
 
 .redes-container .redes {
@@ -391,7 +458,24 @@ ul li a {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    color: var(--body-color);
 }
+
+.redes-container .redes a:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.footer .redes-container .texto h3{
+    color: var(--orange);
+    margin-bottom: 0;
+}
+
+.footer .redes-container a {
+    color: var(--body-color);
+}
+
+/* FOOTER FINISH */
 
 /* REGISTRATION FORM STYLES */
 
