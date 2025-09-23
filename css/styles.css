@@ -333,6 +333,9 @@ h2 {
     padding-top: 2rem;
 }
 
+.itinerario .card-itinerario .card-txt {
+    color: var(--body-color);
+}
 
 
 .card-itinerario h3 {
@@ -446,6 +449,10 @@ h2 {
 
 .redes {
     margin-top: 2rem;
+}
+
+.footer .redes-container .texto p {
+    color: var(--body-color);
 }
 
 .redes-container .redes a i {
