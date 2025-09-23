@@ -685,6 +685,23 @@ p {
 
 }
 
+/* MODALIDADES FINISH */
+
+/* HOSPEDAJE STYLES */
+
+.hospedaje {
+    height: 400px;
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-hospe .texto-hospe h1 {
+    text-align: center;
+    color: var(--orange);
+}
+
 
 /* BREAKPOINTS */
 
