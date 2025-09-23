@@ -490,7 +490,11 @@ h2 {
 
 /* FOOTER FINISH */
 
- 
+ /* INSCRIPCION */
+
+ .inscripcion {
+    background-color: var(--background-light);
+ }
 
 /* MODALIDADES STYLES */
 
