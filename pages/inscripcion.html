@@ -68,156 +68,42 @@
         </nav>
     </header>
 
+    <script type="text/javascript">
+          var RRReg_eventid="363073";
+          var RRReg_name="Registración Invidual";
+          var RRReg_key="JUKl1Wlsg6I2";
+          var RRReg_server="https://events1.raceresult.com";
+    </script>
+    <script type="text/javascript" src="https://events1.raceresult.com/registrations/init.js?lang=en-es"></script>
+    <style>
+        .RRReg .RRReg_Nav > div > div.selected {
+            background-color: #fb520c;
+        }
+        .RRReg .RRReg_Nav > div > div.disabled {
+            background-color: #bd400a;
+        }
+        .RRReg div.RRReg_EntryField.RRReg_Mandatory > input {
+            border-left: 3px solid #fb520c !important;
+        }
 
+        .RRReg div.RRReg_EntryField > input[type='text']:not(:disabled):focus {
+            border-color: #593b78;
+        }
 
-    <main id="main-inscripcion">
-        <div class="inscription-container">
-            <h1 class="inscription-title">Inscripción a la Carrera</h1>
-            <p class="inscription-subtitle">Completa el formulario para participar en Vértice Sur</p>
+      .RRReg div.RRReg_EntryField.RRReg_Mandatory > select {
+        border-left: 3px solid #fb520c !important;
+      }
 
-            <form method="post" class="registration-form">
-                <!-- Personal Information -->
-                <div class="form-section">
-                    <h3>Información Personal</h3>
-                    <div class="form-field">
-                        <label for="firstName">Nombre *</label>
-                        <input type="text" id="firstName" name="firstName" required class="form-input">
-                    </div>
+      .RRReg button {
+        background-color: #fb520c;
+        border-radius: 10px;
+      }
 
-                    <div class="form-field">
-                        <label for="lastName">Apellido *</label>
-                        <input type="text" id="lastName" name="lastName" required class="form-input">
-                    </div>
+      .RRReg button:hover {
+        background-color: #593b78;
+      }
 
-                    <div class="form-field">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required class="form-input">
-                    </div>
-
-                    <div class="form-field">
-                        <label for="phone">Teléfono *</label>
-                        <input type="tel" id="phone" name="phone" required class="form-input">
-                    </div>
-
-                    <div class="form-field">
-                        <label for="birthDate">Fecha de Nacimiento *</label>
-                        <input type="date" id="birthDate" name="birthDate" required class="form-input">
-                    </div>
-
-                    <div class="form-field">
-                        <label for="gender">Género *</label>
-                        <select id="gender" name="gender" required class="form-select">
-                            <option value="">Seleccionar...</option>
-                            <option value="male">Masculino</option>
-                            <option value="female">Femenino</option>
-                            <option value="other">Otro</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Race Information -->
-                <div class="form-section">
-                    <h3>Información de la Carrera</h3>
-                    <div class="form-field">
-                        <label for="raceCategory">Categoría de Carrera *</label>
-                        <select id="raceCategory" name="raceCategory" required class="form-select">
-                            <option value="">Seleccionar categoría...</option>
-                            <option value="70k">70K</option>
-                        </select>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="shirtSize">Talla de Camiseta *</label>
-                        <select id="shirtSize" name="shirtSize" required class="form-select">
-                            <option value="">Seleccionar talla...</option>
-                            <option value="XS">XS</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                            <option value="XXL">XXL</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Emergency Contact -->
-                <div class="form-section">
-                    <h3>Contacto de Emergencia</h3>
-                    <div class="form-field">
-                        <label for="emergencyName">Nombre del Contacto *</label>
-                        <input type="text" id="emergencyName" name="emergencyName" required class="form-input">
-                    </div>
-
-                    <div class="form-field">
-                        <label for="emergencyPhone">Teléfono del Contacto *</label>
-                        <input type="tel" id="emergencyPhone" name="emergencyPhone" required class="form-input">
-                    </div>
-
-                    <div class="form-field">
-                        <label for="emergencyRelationship">Relación *</label>
-                        <select id="emergencyRelationship" name="emergencyRelationship" required class="form-select">
-                            <option value="">Seleccionar...</option>
-                            <option value="spouse">Cónyuge</option>
-                            <option value="parent">Padre/Madre</option>
-                            <option value="sibling">Hermano/a</option>
-                            <option value="friend">Amigo/a</option>
-                            <option value="other">Otro</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Medical Information -->
-                <div class="form-section">
-                    <h3>Información Médica</h3>
-                    <div class="form-field">
-                        <label for="medicalConditions">Condiciones Médicas Relevantes</label>
-                        <textarea id="medicalConditions" name="medicalConditions" rows="3"
-                            placeholder="Describe cualquier condición médica, alergias o medicamentos que debamos conocer..."
-                            class="form-textarea"></textarea>
-                    </div>
-
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="medicalClearance" name="medicalClearance" required>
-                        <label for="medicalClearance">Declaro que estoy en buen estado de salud y apto para participar
-                            en esta carrera *</label>
-                    </div>
-                </div>
-
-                <!-- Terms and Conditions -->
-                <div class="form-section">
-                    <h3>Términos y Condiciones</h3>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
-                        <label for="termsAccepted">He leído y acepto los términos y condiciones de la carrera *</label>
-                    </div>
-
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="privacyAccepted" name="privacyAccepted" required>
-                        <label for="privacyAccepted">Acepto el tratamiento de mis datos personales según la política de
-                            privacidad *</label>
-                    </div>
-
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="photoConsent" name="photoConsent">
-                        <label for="photoConsent">Autorizo el uso de mi imagen en fotografías y videos de la
-                            carrera</label>
-                    </div>
-                </div>
-
-                <!-- Submit Button -->
-                <div class="submit-container">
-                    <button type="submit" class="submit-button">
-                        Enviar Inscripción
-                    </button>
-                </div>
-            </form>
-        </div>
-    </main>
-
-    </footer>
-
-
-    <script src="../js/form-validation.js"></script>
+    </style>
     <script src="../js/index.js"></script>
 </body>
 

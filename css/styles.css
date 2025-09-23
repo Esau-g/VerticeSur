@@ -300,8 +300,14 @@ h2 {
     padding-top: 10px;
 }
 
+.card_container .card {
+    background: var(--black);
+}
+
 .card_container .card img {
     max-width: 100%;
+    height: 30%;
+    opacity: 0.75;
 }
 
 /* MAIN FINISH */
@@ -484,147 +490,7 @@ h2 {
 
 /* FOOTER FINISH */
 
-/* REGISTRATION FORM STYLES */
-
-#main-inscripcion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 2rem;
-}
-
-.inscription-container {
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    background-color: var(--background-light);
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 4px 3px 25px rgb(153, 153, 153);
-}
-
-.inscription-container h1,
-p {
-    color: var(--white);
-}
-
-.inscription-title {
-    margin-bottom: 1rem;
-}
-
-.inscription-subtitle {
-    margin-bottom: 2rem;
-}
-
-.registration-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.form-section {
-    margin-bottom: 2rem;
-}
-
-.form-section h3 {
-    margin-bottom: 1rem;
-    color: var(--white);
-}
-
-.form-field {
-    margin-bottom: 1rem;
-}
-
-.form-field label {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-weight: var(--font-semi-bold);
-    color: var(--white);
-}
-
-.form-input,
-.form-select,
-.form-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.25rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: var(--body-font);
-    font-size: 1rem;
-}
-
-.form-input:focus,
-.form-select:focus,
-.form-textarea:focus {
-    outline: none;
-    border-color: #ffaa00;
-    box-shadow: 0 0 5px 4px rgba(255, 123, 0, 0.254);
-}
-
-.form-textarea {
-    resize: vertical;
-    min-height: 80px;
-}
-
-.checkbox-group {
-    margin-bottom: 1rem;
-}
-
-.checkbox-group input[type="checkbox"] {
-    margin-right: 0.5rem;
-}
-
-.checkbox-group label {
-    display: inline;
-    font-weight: var(--font-regular);
-    color: var(--white);
-    cursor: pointer;
-}
-
-.submit-container {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.submit-button {
-    background-color: var(--background-dark);
-    color: white;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: var(--font-semi-bold);
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.submit-button:hover {
-    background-color: var(--orange);
-}
-
-.submit-button:active {
-    transform: translateY(1px);
-}
-
-/* ERROR STATES */
-
-.form-input.error,
-.form-select.error,
-.form-textarea.error {
-    border-color: #ff132b;
-    background-color: #fff5f5;
-}
-
-.error-message {
-    color: #ff132b;
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
-    display: block;
-}
-
-/* FINALIZA REGISTRATION FORM STYLES */
+ 
 
 /* MODALIDADES STYLES */
 
