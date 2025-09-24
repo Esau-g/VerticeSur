@@ -316,9 +316,9 @@ h2 {
     position: absolute;
     color: var(--body-color);
     bottom: 300px;
-     padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
 
 .main .section_container_main .card_container .text-block h2 {
@@ -517,11 +517,11 @@ h2 {
 
 /* FOOTER FINISH */
 
- /* INSCRIPCION */
+/* INSCRIPCION */
 
- .inscripcion {
+.inscripcion {
     background-color: var(--background-light);
- }
+}
 
 /* MODALIDADES STYLES */
 
@@ -680,8 +680,21 @@ h2 {
         text-align: center;
     }
 
-    .main-modalidades .section-mod .texto-mod .mods>h2 {
+    .texto-mod,
+    .mods,
+    h2 {
         text-align: center;
+    }
+
+    .texto-mod .mods .lista-mod li {
+        font-size: 1rem;
+    }
+
+    .main-modalidades #section-mod {
+     background-image: url(../assets/Mapa\ carrera_light.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     }
 
 }
