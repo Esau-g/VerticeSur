@@ -619,6 +619,72 @@ h2 {
 
 /* Medium Devices */
 
+@media (max-width: 600px) {
+
+    /* CARRERA */
+
+    .carrera_container .section_text .section_header {
+        font-size: 1.8rem;
+    }
+
+    .carrera_container .section_text>h2 {
+        font-size: 1.5rem;
+    }
+
+    .carrera_container .section_text .section_description {
+        font-size: 1.2rem;
+    }
+
+    /* CARRERA FIN */
+
+    /* ITINERARIO CARRERA */
+
+    .itinerario>h2 {
+        font-size: 1.8rem;
+    }
+
+    .itinerario .card-itinerario h3 {
+        font-size: 1.3rem;
+    }
+
+    .itinerario .card-itinerario .card-txt>p {
+        font-size: 1rem;
+    }
+
+    /* ITINERARIO CARRERA FIN */
+
+    /* FOOTER */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 28rem;
+    }
+
+    .footer .container .logo-footer {
+        margin-bottom: 10px;
+    }
+
+    /* FOOTER FIN */
+
+    /* MODALIDADES */
+
+    .main-modalidades .section-mod {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-modalidades .section-mod .titulo {
+        text-align: center;
+    }
+
+    .main-modalidades .section-mod .texto-mod .mods>h2 {
+        text-align: center;
+    }
+
+}
 
 
 
