@@ -81,7 +81,7 @@ ul li a {
 .nav_logo,
 .nav_burger,
 .nav_close {
-    color: var(--white);
+    color: var(--black);
 }
 
 .nav_data {
@@ -146,14 +146,14 @@ ul li a {
     }
 
     .nav_list {
-        background-color: var(--dark-color);
+        background-color: var(--background-dark);
         padding-top: 1rem;
     }
 }
 
 .nav_link {
-    color: var(--white);
-    background-color: var(--dark-color);
+    color: var(--black);
+    background-color: var(--background-dark);
     font-weight: var(--font-regular);
     padding: 1.25rem 1.5rem;
     display: flex;
@@ -196,7 +196,7 @@ ul li a {
 
 .dropdown_link {
     padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-    color: var(--white);
+    color: var(--black);
     background-color: var(--background-dark);
     display: flex;
     align-items: center;
