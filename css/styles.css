@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* VARIABLES */
 
 :root {
     --header-height: 4rem;
-    --background-dark: #2c1d3c;
+    --background-dark: #d9d9d9;
     --background-light: #593b78;
     --orange: #fb520c;
     --white: #ffffff;
     --black: #000000;
     --dark-color: #2c1d3c;
-    --body-font: "Play", sans-serif;
-    --body-color: #e3e3e3;
+    --body-font: "Montserrat", sans-serif;
+    --body-color: #d9d9d9;
     --font-regular: 400;
     --font-semi-bold: 600;
     --ztooltip: 10;
@@ -63,7 +63,7 @@ ul li a {
 
 .header {
     position: sticky;
-    height: 60px;
+    height: 70px;
     top: 0;
     left: 0;
     width: 100%;
@@ -99,7 +99,7 @@ ul li a {
 }
 
 .nav_logo img {
-    width: 80px;
+    width: 100px;
     display: inline;
     align-items: center;
     column-gap: .25rem;
@@ -240,6 +240,7 @@ ul li a {
 }
 
 #mapAnim {
+    position: relative;
     height: auto;
     max-width: 100%;
     background-color: var(--background-dark);
@@ -247,8 +248,19 @@ ul li a {
 
 #map {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
+}
+
+.text-block h1 {
+    color: var(--white);
+}
+
+.text-block {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
 }
 
 /* SECTION CARRERA */
@@ -520,7 +532,7 @@ h2 {
 /* INSCRIPCION */
 
 .inscripcion {
-    background-color: var(--background-light);
+    background-color: var(--background-dark);
 }
 
 /* MODALIDADES STYLES */
