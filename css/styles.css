@@ -316,6 +316,7 @@ h3 {
 
 .carrera .carrera-container .texto-carrera h3 {
     color: var(--blacks);
+    margin-top: 15px;
 }
 
 .carrera .texto-carrera {
