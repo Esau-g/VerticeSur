@@ -471,6 +471,7 @@ h3 {
     border-radius: 10px;
     background-color: var(--background-dark);
     text-align: left;
+    line-height: 30px;
 }
 
 .itinerario h2,
