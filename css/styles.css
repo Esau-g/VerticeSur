@@ -850,7 +850,7 @@ h4 {
         flex-direction: column;
     }
 
-     .main .carrera .carrera-container .texto-carrera h3 {
+    .main .carrera .carrera-container .texto-carrera h3 {
         color: var(--black);
         margin-top: 15px;
     }
@@ -1045,5 +1045,13 @@ h4 {
 
     .main .section_container_main .section_container {
         height: 18rem;
+    }
+
+    .carrera .texto-carrera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 30ch;
+        font-size: 1.5rem;
     }
 }
