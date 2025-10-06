@@ -746,6 +746,7 @@ h4 {
 /* BREAKPOINTS */
 
 /* Small Devices */
+
 @media screen and (max-width: 340px) {
     .container {
         margin-inline: 1rem;
