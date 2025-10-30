@@ -585,7 +585,7 @@ h4 {
     font-size: 24px;
 }
 
-.redes-container {
+.footer .redes-container {
     width: 50%;
     margin-top: 1.5rem;
 }
@@ -664,7 +664,26 @@ h4 {
     font-weight: bold;
 }
 
-.redes-container {
+.footer-info {
+    background-color: var(--background-dark);
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer-info .redes-container .texto h3 {
+    color: var(--orange);
+    margin-bottom: 0;
+}
+
+.footer-info .redes-container a {
+    color: var(--black);
+}
+
+.footer-info .redes-container {
 width: 100%;
 margin-top: 1.5rem;
 }
@@ -692,6 +711,11 @@ margin-top: 1.5rem;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+}
+
+#section-mod .texto-mod h2:hover {
+    background-color: #fb520c;
+    color: #000000;
 }
 
 .main-modalidades #section-mod .texto-mod .mods>h2:last-child {
@@ -746,6 +770,85 @@ margin-top: 1.5rem;
     color: var(--orange);
 }
 
+.footer-hospedaje {
+    background-color: var(--background-dark);
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer-hospedaje .redes-container .texto h3 {
+    color: var(--orange);
+    margin-bottom: 0;
+}
+
+.footer-hospedaje .redes-container a {
+    color: var(--black);
+}
+
+.footer-hospedaje .redes-container {
+width: 100%;
+margin-top: 1.5rem;
+}
+
+/* GUIA CARRERA */
+
+.footer-carrera {
+    background-color: var(--background-dark);
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer-carrera .redes-container .texto h3 {
+    color: var(--orange);
+    margin-bottom: 0;
+}
+
+.footer-carrera .redes-container a {
+    color: var(--black);
+}
+
+.footer-carrera .redes-container {
+width: 100%;
+margin-top: 1.5rem;
+}
+
+/* GUIA CARRERA ENDS */
+
+/* CLASIFICACION */
+
+.footer-clasi {
+    background-color: var(--background-dark);
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer-clasi .redes-container .texto h3 {
+    color: var(--orange);
+    margin-bottom: 0;
+}
+
+.footer-clasi .redes-container a {
+    color: var(--black);
+}
+
+.footer-clasi .redes-container {
+width: 100%;
+margin-top: 1.5rem;
+}
+
+/* CLASIFICACION ENDS */
 
 /* BREAKPOINTS */
 
