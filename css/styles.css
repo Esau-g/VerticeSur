@@ -276,8 +276,10 @@ h3 {
     text-align: center;
     font-family: var(--font-regular);
     line-height: 50px;
-    bottom: 290px;
-    right: 480px;
+    bottom: clamp(90px, 35vh, 240px);
+    left: clamp(10px, 10vh, 20px);
+    font-size: clamp(0.5rem, 5vw, 2.5rem);
+    width: 90%;
 }
 
 /* MAPA CARRERA FINISH */
@@ -323,7 +325,9 @@ h3 {
     width: clamp(260px, 35vw, 450px);
     border-radius: 20px;
     position: absolute;
-    left: clamp(0px, 35vw, 40px);;;
+    left: clamp(0px, 35vw, 40px);
+    ;
+    ;
     top: 0;
     box-shadow: 0 0 40px rgb(77, 77, 77);
     z-index: 2;
