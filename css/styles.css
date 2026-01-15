@@ -512,6 +512,45 @@ h4 {
     color: var(--black);
 }
 
+/* SPONSORS */
+
+.sponsors {
+    display: flex;
+}
+
+.carousel {
+    margin: 100px auto;
+    display: flex;
+    width: 90%;
+    overflow-x: auto;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    animation: spin 15s infinite linear;
+    padding-right: 8rem;
+}
+
+.sponsors .logos img {
+    width: 250px;
+}
+
+.logos {
+    flex: 0 0 5em;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
 /* SECTION FAQ */
 
 .faq-section {
