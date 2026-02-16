@@ -835,16 +835,41 @@ h4 {
 /* HOSPEDAJE STYLES */
 
 .hospedaje {
-    height: 400px;
-    background-color: var(--background-light);
+    height: 650px;
+    background-color: var(--background-dark);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.container-hospe {
+     background-color: var(--white);
+    padding: 60px;
+    border-radius: 15px;
+}
+
 .container-hospe .texto-hospe h1 {
+    padding-top: 2rem;
     text-align: center;
     color: var(--orange);
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.options a {
+    color: gray;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.options a:hover {
+    color: #fb520c;
 }
 
 .footer-hospedaje {
