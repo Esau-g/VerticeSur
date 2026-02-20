@@ -547,8 +547,13 @@ h4 {
 }
 
 @keyframes spin {
-    from {translate: 0;}
-    to {translate: -100%;}
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
 }
 
 /* SECTION FAQ */
@@ -765,6 +770,67 @@ h4 {
     text-align: center;
 }
 
+.download-section {
+    margin-top: 40px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border-left: 4px solid #fb520c;
+    text-align: center;
+}
+
+.download-section p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.download-btn-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fb520c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn-info:hover {
+    background-color: #d94409;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(251, 82, 12, 0.3);
+}
+
+.download-btn-info i {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .download-section {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .download-section p {
+        font-size: 16px;
+    }
+
+    .download-btn-info {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+
 /* INFORMACION ENDS */
 
 /* MODALIDADES STYLES */
@@ -843,7 +909,7 @@ h4 {
 }
 
 .container-hospe {
-     background-color: var(--white);
+    background-color: var(--white);
     padding: 60px;
     border-radius: 15px;
 }
@@ -854,7 +920,7 @@ h4 {
     color: var(--orange);
 }
 
-.options{
+.options {
     display: flex;
     flex-direction: column;
     justify-content: center;
