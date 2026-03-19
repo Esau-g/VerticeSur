@@ -99,7 +99,7 @@ ul li a {
 }
 
 .nav_logo img {
-    width: 100px;
+    width: 70px;
     display: inline;
     align-items: center;
     column-gap: .25rem;
@@ -690,7 +690,7 @@ h4 {
 }
 
 .logo-footer img {
-    width: 300px;
+    width: 260px;
 }
 
 .redes {
@@ -880,133 +880,134 @@ h4 {
 /* REGLAMENTO */
 
 .reglamento-container {
-      max-width: 860px;
-      margin: 40px auto 60px auto;
-      padding: 0 24px;
-      font-family: inherit;
-      color: #1a1a1a;
-      line-height: 1.7;
-    }
+    max-width: 860px;
+    margin: 40px auto 60px auto;
+    padding: 0 24px;
+    font-family: inherit;
+    color: #1a1a1a;
+    line-height: 1.7;
+}
 
-    .regla-card {
-      background: #f5f5f5;
-      border-radius: 6px;
-      padding: 10px;
-      margin-bottom: 20px;;
-    }
- 
-    .reglamento-container h1 {
-      text-align: center;
-      font-size: 2.2rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
-    }
- 
-    .reglamento-container .subtitulo {
-      text-align: center;
-      color: #888;
-      font-size: 1rem;
-    }
- 
-    .reglamento-seccion {
-      margin-bottom: 36px;
-      border-left: 4px solid #e84c0e;
-      padding-left: 20px;
-    }
- 
-    .reglamento-seccion h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 10px;
-      color: #1a1a1a;
-    }
- 
-    .reglamento-seccion p {
-      margin: 8px 0;
-      font-size: 0.97rem;
-    }
- 
-    .reglamento-seccion ul {
-      margin: 8px 0 8px 20px;
-      padding: 0;
-      font-size: 0.97rem;
-    }
- 
-    .reglamento-seccion ul li {
-      margin-bottom: 5px;
-    }
- 
-    .reglamento-seccion strong {
-      color: #1a1a1a;
-    }
- 
-    .tramos-tabla {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
-      font-size: 0.93rem;
-    }
- 
-    .tramos-tabla th {
-      background-color: #e84c0e;
-      color: white;
-      padding: 8px 12px;
-      text-align: left;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-    }
- 
-    .tramos-tabla td {
-      padding: 8px 12px;
-      border-bottom: 1px solid #eee;
-    }
- 
-    .tramos-tabla tr:nth-child(even) td {
-      background-color: #f9f9f9;
-    }
- 
-    .categorias-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
-      margin-top: 12px;
-    }
- 
-    .cat-card {
-      background: #f5f5f5;
-      border-radius: 6px;
-      padding: 12px 16px;
-    }
- 
-    .cat-card h3 {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #e84c0e;
-      margin: 0 0 8px 0;
-      letter-spacing: 0.3px;
-    }
- 
-    .cat-card ul {
-      margin: 0;
-      padding-left: 16px;
-      font-size: 0.88rem;
-    }
- 
-    .cat-card ul li {
-      margin-bottom: 3px;
-    }
- 
-    .divider {
-      border: none;
-      border-top: 1px solid #ececec;
-      margin: 40px 0;
-    }
+.regla-card {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 20px;
+    ;
+}
+
+.reglamento-container h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.reglamento-container .subtitulo {
+    text-align: center;
+    color: #888;
+    font-size: 1rem;
+}
+
+.reglamento-seccion {
+    margin-bottom: 36px;
+    border-left: 4px solid #e84c0e;
+    padding-left: 20px;
+}
+
+.reglamento-seccion h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.reglamento-seccion p {
+    margin: 8px 0;
+    font-size: 0.97rem;
+}
+
+.reglamento-seccion ul {
+    margin: 8px 0 8px 20px;
+    padding: 0;
+    font-size: 0.97rem;
+}
+
+.reglamento-seccion ul li {
+    margin-bottom: 5px;
+}
+
+.reglamento-seccion strong {
+    color: #1a1a1a;
+}
+
+.tramos-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 0.93rem;
+}
+
+.tramos-tabla th {
+    background-color: #e84c0e;
+    color: white;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.tramos-tabla td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.tramos-tabla tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.cat-card {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+
+.cat-card h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e84c0e;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.3px;
+}
+
+.cat-card ul {
+    margin: 0;
+    padding-left: 16px;
+    font-size: 0.88rem;
+}
+
+.cat-card ul li {
+    margin-bottom: 3px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ececec;
+    margin: 40px 0;
+}
 
 /* REGLAMENTO ENDS */
 
@@ -1256,6 +1257,34 @@ h4 {
 .footer-clasi .redes-container {
     width: 100%;
     margin-top: 1.5rem;
+}
+
+/* Results Page */
+.results-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+.results-section .results-title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.results-title h1 {
+    font-size: 2rem;
+}
+
+.results-coming-soon {
+       text-align: center;
+    margin-bottom: 2rem;
+}
+
+.results-coming-soon p {
+    font-size: 1.2rem;
+}
+
+.results-coming-soon h2 {
+    color: var(--orange);
 }
 
 /* CLASIFICACION ENDS */

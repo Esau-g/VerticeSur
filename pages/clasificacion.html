@@ -13,10 +13,10 @@
 
 <body>
     <header class="header" id="home">
-      <nav class="nav_container">
+        <nav class="nav_container">
             <div class="nav_data">
                 <a href="../index.html" class="nav_logo">
-                    <img class="logo" src="../img/Logo_Final.png" alt="Logo vertice sur">
+                    <img class="logo" src="../img/VerticeSurB.png" alt="Logo vertice sur">
                 </a>
 
                 <div class="nav_toggle" id="nav-toggle">
@@ -46,7 +46,7 @@
                                 </a>
                             </li>
 
-                              <li>
+                            <li>
                                 <a href="/pages/reglamento.html" class="dropdown_link">
                                     Reglamento
                                 </a>
@@ -74,36 +74,60 @@
         </nav>
     </header>
 
-  
-
-    <main id="main">
-       
-    </main>
-   
- <footer class="footer-clasi">
-        <div class="container">
-            <div class="logo-footer">
-                <img src="../img/Logo_Final.png" alt="Logo">
-            </div>
-        </div>
-        <div class="redes-container">
-            <div class="texto">
-                <h3>¿Dudas o Consultas?</h3><br>
-                <p>Contactate con nosotros</p>
-                <a href="mailto:desafio.verticesur@gmail.com">desafio.verticesur@gmail.com</a>
-            </div>
-            <div class="redes">
-                <a href="https://www.instagram.com/verticesur/" target="_blank">
-                    <i class="ri-instagram-line"></i>
-                    Instagram
-                </a>
-            </div>
-        </div>
-    </footer>
-
-
-  
-    <script src="../js/index.js"></script>
+ 
+<main id="main-clasi">
+  <section class="results-section">
+    <h1 class="results-title">Resultados</h1>
+ 
+    <!-- Shown until results are published -->
+    <div class="results-coming-soon" id="comingSoon">
+      <h2>Resultados muy pronto!</h2>
+      <p>Los resultados de la carrera estaran disponibles aqui una vez que finalice el evento.</p>
+    </div>
+ 
+    <!-- Widget will populate this div once results are live -->
+    <div id="divRRPublish" class="RRPublish"></div>
+  </section>
+</main>
+ 
+<footer class="footer-clasi">
+  <div class="container">
+    <div class="logo-footer">
+      <img src="../img/VerticeSurB.png" alt="Logo">
+    </div>
+  </div>
+  <div class="redes-container">
+    <div class="texto">
+      <h3>¿Dudas o Consultas?</h3><br>
+      <p>Contactate con nosotros</p>
+      <a href="mailto:desafio.verticesur@gmail.com">desafio.verticesur@gmail.com</a>
+    </div>
+    <div class="redes">
+      <a href="https://www.instagram.com/verticesur/" target="_blank">
+        <i class="ri-instagram-line"></i>
+        Instagram
+      </a>
+    </div>
+  </div>
+</footer>
+ 
+ 
+<script src="../js/index.js"></script>
+ 
+<!-- Race Results Widget -->
+<script type="text/javascript" src="https://my.raceresult.com/RRPublish/load.js?lang=en"></script>
+<script type="text/javascript">
+  function initRRPublish() {
+    if (typeof RRPublish !== "undefined") {
+      var rrp = new RRPublish(document.getElementById("divRRPublish"), 363073, "results");
+      rrp.ShowTimerLogo = true;
+      rrp.ShowInfoText = false;
+    } else {
+      setTimeout(initRRPublish, 100);
+    }
+  }
+  initRRPublish();
+</script>
 </body>
 
 </html>
