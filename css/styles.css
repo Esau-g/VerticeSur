@@ -1271,7 +1271,8 @@ h4 {
 }
 
 .results-title h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: var(--font-semi-bold);
 }
 
 .results-coming-soon {
